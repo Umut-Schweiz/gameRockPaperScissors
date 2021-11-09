@@ -63,3 +63,32 @@ body {
     letter-spacing: 2.5px;
     text-align: left;
 }
+
+.hands {
+    background-image: url("./assets/triangle.png");
+    background-repeat: no-repeat;
+    width: 476px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    background-position: center;
+}
+
+.hands .hand {
+    cursor: pointer;
+}
+
+.hands .hand:hover{
+    transform: translate3d(0px,-8px, 0px);
+    transition: all 0.2s;
+}
+
+.scissors {
+    margin-left: 20px;
+}
+
+.paper {
+    margin-right: 20px;
+}
