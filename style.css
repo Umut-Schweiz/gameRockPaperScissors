@@ -92,3 +92,59 @@ body {
 .paper {
     margin-right: 20px;
 }
+
+.contest {
+    width: 900px;
+    display: none;
+    margin-top: 50px;
+}
+
+.contest img {
+    width: 275px;
+    height: 275px;
+}
+
+.contest > div {
+    flex: 1;
+}
+
+.contest h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.newGame {
+    color: hsl(229, 25%, 31%);
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.newGame:hover {
+    background: rgb(218, 218, 218);
+    transform: translate3d(0px, -2px, 0px);
+}
+
+.contest .handImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.referee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .referee h1 {
+    font-size: 45px;
+    color: white;
+  }
+  
+
