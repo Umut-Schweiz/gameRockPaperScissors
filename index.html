@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/style.css" />
+    
   </head>
   <body>
 
@@ -58,21 +59,21 @@
           <div class="userhand">
               <h1>YOU PICKED</h1>
               <div class="handImageContainer">
-                  <img src="/assets/Paper.png" alt="">
+                  <img id="userPickImage" src="/assets/Paper.png" alt="">
               </div>
           </div>
           <div class="referee">
               <div class="decision">
                   <h1>YOU WIN</h1>
               </div>
-              <div class="newGame">
+              <div class="newGame" onclick="restartGame()">
                   PLAY AGAIN
               </div>
           </div>
           <div class="computerhand">
             <h1>THE HOUSE PICKED</h1>
             <div class="handImageContainer">
-                <img src="/assets/Rock.png" alt="">
+                <img id="computerPickImage" src="/assets/Rock.png" alt="">
             </div>
         </div>
       </div>
