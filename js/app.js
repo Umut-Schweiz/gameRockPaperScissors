@@ -1,3 +1,8 @@
+//here an alert will be added
+//two table will be created one for the computer the other for the user
+// winner will be determined at the end of 3 or more game
+
+
 const handOptions = {
     "rock": "/assets/Rock.png",
     "paper": "/assets/Paper.png",
@@ -5,7 +10,8 @@ const handOptions = {
   }
   
   let SCORE = 0;
-  
+
+ 
   const pickUserHand = (hand) => {
     let hands = document.querySelector(".hands");
     hands.style.display = "none";
@@ -18,20 +24,20 @@ const handOptions = {
   
     pickComputerHand(hand)
     
-  };
+  };  
+  
   
   const pickComputerHand = (hand) => {
       let hands = ["rock", "paper", "scissors"];
       let cpHand = hands[Math.floor(Math.random() * hands.length)];
-
-      console.log(cpHand)
-      
+     
       // set computer image 
       document.querySelector("#computerPickImage").src = handOptions[cpHand]
       
       referee(hand, cpHand);
   };
   
+
   const referee = (userHand, cpHand) => {
     if (userHand == "paper" && cpHand == "scissors") {
       setDecision("YOU LOSE!");
@@ -82,3 +88,4 @@ const handOptions = {
     document.querySelector(".score h1").innerText = newScore;
   }
   
+ 
