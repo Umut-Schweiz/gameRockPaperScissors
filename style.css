@@ -238,3 +238,23 @@ body {
   font-size: 45px;
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .wrapper {
+    width: 100vw;
+    height: auto;
+  }
+
+  .game-area {
+    flex-direction: column;
+  }
+
+  .contest {
+    flex-direction: column;
+  }
+
+  
+
+
+}
