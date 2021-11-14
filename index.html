@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
       rel="stylesheet"
     />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
@@ -24,12 +25,13 @@
 
         <div class="scoreboard-user">
           <div class="score">
-            <p>Your Score</p>
-            <h1>0</h1>
+            <p >Your Score</p>
+            <h1 id="userScore">0</h1>
           </div>
         </div>
 
         <div class="hands">
+
           <div class="hand paper">
             <img
               src="/assets/Paper.png"
@@ -55,24 +57,26 @@
           </div>
         </div>
 
+        <div class="result">
+          <h1 class="finishedGame">Game Over!</h1>
+          <h1 class="result-lost">
+            YOU LOST THE GAME!
+          </h1> 
+          <h1 class="result-won">
+            YOU WON THE GAME!
+          </h1>
+          <div class="refreshGame" onclick="restartGame()">PLAY AGAIN</div>
+
+        </div>
+
         <div class="scoreboard-computer">
           <div class="score">
-            <p>Computer Score</p>
-            <h1>0</h1>
+            <p >Computer Score</p>
+            <h1 id="computerScore">0</h1>
           </div>
         </div>
 
       </div>
-
-      <div class="result">
-        <h1 class="result-lost">
-          YOU LOST THE GAME!
-        </h1> 
-        <h1 class="result-won">
-          YOU WON THE GAME!
-        </h1>
-      </div>
-
       <div class="contest">
         <div class="userhand">
           <h1>YOU PICKED</h1>
@@ -83,12 +87,12 @@
         <div class="referee">
           <div class="decision">
             <h1>YOU WIN</h1>
-            <h1> 2 games left</h1>
+            <h1 id="numberOfGame"> </h1>
           </div>
-          <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+          <div class="newGame" onclick="nextRound()">Next Round</div>
         </div>
         <div class="computerhand">
-          <h1>THE HOUSE PICKED</h1>
+          <h1>THE COMPUTER PICKED</h1>
           <div class="handImageContainer">
             <img id="computerPickImage" src="/assets/Rock.png" alt="" />
           </div>
@@ -97,7 +101,7 @@
     </div>
 
     
-
+ 
     <script src="/js/app.js"></script>
   </body>
 </html>
