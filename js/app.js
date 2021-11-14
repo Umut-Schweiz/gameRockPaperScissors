@@ -34,7 +34,7 @@ const pickUserHand = (hand) => {
 //reduce number of game right
 const reduceTimeGamesRight = () => {
   timesGame -= 1;
-  document.querySelector("#numberOfGame").innerText = `${timesGame} games left`;
+  document.querySelector("#numberOfGame").innerText = `Rounds Remaining: ${timesGame}`;
   if (timesGame == 0) {
     document.querySelector(".newGame").innerText = "Show Result";
   }
