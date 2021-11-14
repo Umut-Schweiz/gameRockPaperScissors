@@ -9,12 +9,14 @@ const handOptions = {
     "scissors": "/assets/Scissors.png"
   }
   
-  let SCORE = 0;
+  let userScore = 0;
+  let computerScore = 0;
+  let timesGame = 5; 
 
  
   const pickUserHand = (hand) => {
-    let hands = document.querySelector(".hands");
-    hands.style.display = "none";
+    let gameArea = document.querySelector(".game-area");
+    gameArea.style.display = "none";
   
     let contest = document.querySelector(".contest");
     contest.style.display = "flex";
@@ -75,7 +77,7 @@ const handOptions = {
     let contest = document.querySelector(".contest");
     contest.style.display = "none";
   
-    let hands = document.querySelector(".hands");
+    let hands = document.querySelector(".game-area");
     hands.style.display = "flex";
   }
   

@@ -12,73 +12,91 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/style.css" />
-    
   </head>
   <body>
-
     <div class="wrapper">
 
-      <div class="scoreboard">
-        <div class="title">
-          <img src="/assets/title.png" alt="title" />
-        </div>
-        <div class="score">
-          <p>SCORE</p>
-          <h1>0</h1>
-        </div>
+      <div class="gameboard">
+        <img src="/assets/title.png" alt="title" />
       </div>
 
-      <div class="hands">
+      <div class="game-area">
 
-        <div class="hand paper">
-          <img
-            src="/assets/Paper.png"
-            alt="paper"
-            onclick="pickUserHand('paper')"
-          />
+        <div class="scoreboard-user">
+          <div class="score">
+            <p>Your Score</p>
+            <h1>0</h1>
+          </div>
         </div>
 
-        <div class="hand scissors">
-          <img
-            src="/assets/Scissors.png"
-            alt="scissors"
-            onclick="pickUserHand('scissors')"
-          />
+        <div class="hands">
+          <div class="hand paper">
+            <img
+              src="/assets/Paper.png"
+              alt="paper"
+              onclick="pickUserHand('paper')"
+            />
+          </div>
+
+          <div class="hand scissors">
+            <img
+              src="/assets/Scissors.png"
+              alt="scissors"
+              onclick="pickUserHand('scissors')"
+            />
+          </div>
+
+          <div class="hand rock">
+            <img
+              src="/assets/Rock.png"
+              alt="rock"
+              onclick="pickUserHand('rock')"
+            />
+          </div>
         </div>
 
-        <div class="hand rock">
-          <img
-            src="/assets/Rock.png"
-            alt="rock"
-            onclick="pickUserHand('rock')"
-          />
+        <div class="scoreboard-computer">
+          <div class="score">
+            <p>Computer Score</p>
+            <h1>0</h1>
+          </div>
         </div>
 
       </div>
+
+      <div class="result">
+        <h1 class="result-lost">
+          YOU LOST THE GAME!
+        </h1> 
+        <h1 class="result-won">
+          YOU WON THE GAME!
+        </h1>
+      </div>
+
       <div class="contest">
-          <div class="userhand">
-              <h1>YOU PICKED</h1>
-              <div class="handImageContainer">
-                  <img id="userPickImage" src="/assets/Paper.png" alt="">
-              </div>
+        <div class="userhand">
+          <h1>YOU PICKED</h1>
+          <div class="handImageContainer">
+            <img id="userPickImage" src="/assets/Paper.png" alt="" />
           </div>
-          <div class="referee">
-              <div class="decision">
-                  <h1>YOU WIN</h1>
-              </div>
-              <div class="newGame" onclick="restartGame()">
-                  PLAY AGAIN
-              </div>
+        </div>
+        <div class="referee">
+          <div class="decision">
+            <h1>YOU WIN</h1>
+            <h1> 2 games left</h1>
           </div>
-          <div class="computerhand">
-            <h1>THE HOUSE PICKED</h1>
-            <div class="handImageContainer">
-                <img id="computerPickImage" src="/assets/Rock.png" alt="">
-            </div>
+          <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+        </div>
+        <div class="computerhand">
+          <h1>THE HOUSE PICKED</h1>
+          <div class="handImageContainer">
+            <img id="computerPickImage" src="/assets/Rock.png" alt="" />
+          </div>
         </div>
       </div>
-
     </div>
+
+    
 
     <script src="/js/app.js"></script>
   </body>
