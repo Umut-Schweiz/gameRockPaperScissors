@@ -1,3 +1,8 @@
+
+You can try the game here...Have a good time!
+
+https://rock-paper-scissors-games.herokuapp.com/
+
 #classic rock-paper-scissors-game
 
 
